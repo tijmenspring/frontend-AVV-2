@@ -1,0 +1,324 @@
+.flex-container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: yellow;
+  padding: 5px;
+  width: 180px;
+  height: 25px;
+  margin-top: 10px;
+  
+    
+  line-height: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  
+}
+.flex-item2 {
+   -moz-border-radius-topleft: 56px;
+-webkit-border-top-left-radius: 56px;
+ border-top-left-radius: 56px;
+-moz-border-radius-topright: 56px;
+-webkit-border-top-right-radius: 56px;
+border-top-right-radius: 56px;
+-moz-border-radius-bottomleft: 56px;
+-webkit-border-bottom-left-radius: 56px;
+border-bottom-left-radius: 56px;
+    
+  background: yellow;
+  padding: 0.3em;
+   
+  width: 180px;
+  height: 30px;
+  margin-top: 20px;
+  
+  display:inline;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  
+}
+.flex-item3 {
+  background: orange;
+  padding: 0.1em;
+  
+  width: 1800px;
+  height: 40px;
+  margin-top: 10px;
+  
+display:block;
+  
+    line-height: 1px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+.flex-item:hover {
+  width: 190px;
+  height: 35px;
+  padding:5px;
+  transition: 1s;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+.flex-item2:hover {
+  width: 190px;
+  height: 35px;
+  padding:5px;
+  transition: 1s;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+.flex-item3:hover {
+ 
+  
+  transition: 1s;
+  box-shadow: 10px 10px 5px #888888;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+html {
+  box-sizing: border-box;
+}
+
+
+
+
+@-ms-keyframes color2{
+    0% {color: yellow;}
+    25% {color: orange;}
+    50% {color: red;}
+    75% {color: green;}
+    100% {color: blue;}
+}
+
+ @keyframes color2 {
+         0% {color: yellow;}
+    25% {color: orange;}
+    50% {color: red;}
+    75% {color: green;}
+    100% {color: blue;}
+    }
+
+
+
+p{
+    font-size: calc(1vw + 1vh + 0.5vmin);
+   padding-right: 6em;
+    padding-left: 12em;
+    max-width: 55em;
+  
+
+        ms-animation: color-change 2s infinite;
+        animation: color-change 2s infinite;
+        animation-direction: alternate;
+    }
+
+
+    @-ms-keyframes color-change {
+        0% { color: red; }
+        25% { color: blue;}
+        50% { color: green; }
+        75% { color: yellow;}
+        100% { color: purple; }
+    }
+
+    @keyframes color-change {
+        0% { color: red; }
+        25% { color: blue;}
+        50% { color: green; }
+        75% { color: yellow;}
+        100% { color: purple; }
+    }
+
+
+    /*h2+p:hover{
+    transform:rotate(-360deg);
+
+    transition:2s;*/
+
+aside+footer{
+background-image: url("http://cdn.meme.am/instances/500x/64727339.jpg")
+    /*bron:http://memegenerator.net/instance/64727339*/
+}
+
+h1{
+    font-size: calc(3vw + 3vh + 1.5vmin);    
+    text-align: center;
+    transition:1s;
+
+}
+
+body{
+background-image:url(33ced2d2.png)
+}
+
+h2{
+    font-size: calc(2vw + 2vh + 1vmin);
+    text-align: center;
+      ms-animation: color-change 2s infinite;
+        animation: color-change 2s infinite;
+        animation-direction: alternate;
+}
+
+h3{
+    font-size: calc(1.5vw + 1.5vh + 0.75vmin);
+   text-align: center;
+}
+
+h4{
+    font-size: calc(1.5vw + 1.5vh + 0.75vmin);
+   text-align: center;
+}
+
+ol{
+    padding-right: 6em;
+    padding-left: 6em;
+}
+
+ul{
+    padding-right: 6em;
+    padding-left: 6em;
+}
+
+form{
+    padding-right: 6em;
+    padding-left: 6em;
+}
+
+
+@media only screen and (max-width: 1280px), only screen and (max-device-width: 1280px) {
+    
+.flex-item3 {
+  background: red;
+  padding: 0.7em;
+  
+  width: 540px;
+  height: 40px;
+  margin-top: 10px;
+  
+display:block;
+  
+    line-height: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+    aside + footer{
+        background: #e0ffc7 url("http://images.huffingtonpost.com/2014-03-24-5-thumb.gif") no-repeat center center;  
+        /*bron:http://www.huffingtonpost.com/madison-bondi/theme-songs-of-the-illino_b_5022799.html*/
+    }
+    
+	}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    
+    p{
+        font-size: calc(2vw + 2vh + 1vmin);
+       
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    h1{
+     font-size: calc(4vw + 4vh + 2vmin);
+        padding-left: 15px;
+    }
+    
+     h2{
+     font-size: calc(3vw + 3vh + 1.5vmin);
+        padding-left: 15px;
+         max-width: 40em;
+    }
+    
+     h3{
+     font-size: calc(3vw + 3vh + 1.5vmin);
+        padding-left: 15px;
+          max-width: 40em;
+    }
+    
+     h4{
+     font-size: calc(3vw + 3vh + 1.5vmin);
+        padding-left: 15px;
+          max-width: 40em;
+    }
+    
+    .flex-item2 {
+   -moz-border-radius-topleft: 56px;
+-webkit-border-top-left-radius: 56px;
+ border-top-left-radius: 56px;
+-moz-border-radius-topright: 56px;
+-webkit-border-top-right-radius: 56px;
+border-top-right-radius: 56px;
+-moz-border-radius-bottomleft: 56px;
+-webkit-border-bottom-left-radius: 56px;
+border-bottom-left-radius: 56px;
+    
+  background: yellow;
+  padding: 0.3em;
+        padding-left: 5px;
+   
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+  
+  display:inline;
+  line-height: 40px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  
+}
+    
+.flex-item3 {
+  background: green;
+    padding-left: 10px;
+  padding: 0.9em;
+  
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  
+display:block;
+  
+    line-height: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+    aside + footer{
+        width: 420px;
+        height:480px;
+    background: url("http://cdn.meme.am/instances/63523719.jpg") no-repeat;
+        /*bron:http://memegenerator.net/instance/58515027*/
+    }
+    
+    
+	}
